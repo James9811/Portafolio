@@ -1,0 +1,229 @@
+*{
+  padding: 0%;
+  margin: 0%;  
+  text-decoration: none;
+  list-style: none;
+}
+/*MENU*/
+.nava{
+background: rgb(255, 255, 255);
+padding: 20px;
+display: flex;
+justify-content: space-evenly;
+align-items:center;
+box-shadow: 0 0 10px rgb(180, 179, 179);
+
+}
+.logo{
+
+    width:30px;
+   cursor: pointer; 
+}
+.logo:hover{
+    opacity:0.3;
+    transition:500ms;
+}
+.menu a{
+font-size:20px;
+font-weight: 200;
+text-decoration: none;
+margin: 0 40px 0 0;
+color: black;
+}
+.menu{
+ display: flex;
+}
+.menu a::after{
+    content: "";
+    display: block;
+    background: #1FDE82;
+    width: 0;
+    height: 2px;
+  
+}
+.menu a:hover::after{
+    width: 100%;
+    transition: width 1s;
+}
+.menu a:hover{
+   color: #1FDE82;
+   transition:500ms;
+}
+/*ICONO HAMBURGUESA */
+.hamburguesa{
+    display: none;
+}
+.hamburguesa:hover{
+    transition:1s;
+    color: #1FDE82;
+}
+.fas{
+    font-size:30px;
+
+}
+/*CONTENEDOR*/
+.contenedor video{
+
+margin-top:5px;
+width: 100%;
+}
+.contenedor{
+   
+    z-index:1;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+.formulario{
+    opacity: 0.8;
+position: absolute;
+animation: anim 2s;
+}
+.formulario textarea{
+    border-radius:7px;
+    text-align:center;
+    width:400px;
+    height:100px;
+    color: rgb(0, 0, 0);
+    font-size:16px;
+    display: block;
+    margin: 0 0 10px 0 ;
+    outline: none;
+}
+.formulario .btn{
+    width:100px;
+  margin: auto;
+  border-radius:10px;
+  cursor: pointer;
+  }
+  .formulario .btn:hover{
+    background: #8f8b8b;
+  }
+@keyframes anim{
+    0%{transform: scale(0)}
+   100%{transform: scale(1)}
+}
+@keyframes anima{
+    0%{transform: translateX(-1000px)}
+   100%{transform: translateX(1)}
+}
+.formulario input{
+    border: none;
+ 
+    text-align:center;
+    width:400px;
+    height:40px;
+    display: block;
+    margin: 0 0 20px 0 ;
+    outline: none;
+}
+.parrafo{
+    width:30%;
+    font-size:30px;
+    margin-right:40%;
+    top:350px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    animation: anim 2s;
+}
+/*FOOTER*/
+.footer{
+    background: #1f1d1d00;
+    justify-content: space-evenly;
+   display: flex;
+   padding: 40px;
+   
+   }
+   .lista-footer{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:20px;
+       font-weight:400;
+       display:block;
+       color: #000000bb;
+   
+   }
+   .lista-footer a{
+       margin: 20px 0 0 0 ;
+       display: block;
+       font-size:17px;
+       color: rgba(0, 0, 0, 0.384);
+   }
+   .lista-footer a:hover{
+   color: #1FDE82;
+   transition:1000ms;
+   }
+   .lista-footer i{
+       margin: 20px 0;
+       font-size:40px;
+       cursor: pointer;
+       border-radius: 100%;
+    border: 1px solid black;
+   }
+   
+   .lista-footer i:hover{
+   transition: 1000ms;
+   background:#1FDE82;
+    border-radius: 100%;
+    border: 1px solid #1FDE82;
+   color: white;
+   }
+   
+   
+@media(max-width:900px) {
+    .nava{
+        width:91%;
+        display:block;
+    
+    }
+    .menu{
+        align-items: center;
+        display:none;
+       flex-direction: column;
+    }
+    .menu a{
+        font-size: 26px;
+        display: block;
+        margin: 20px 0 30px 0px;
+    
+    }
+    .actives{
+        display:block;
+    }
+    
+    .hamburguesa{
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        top:4%;
+      left: 88%;
+    }
+    .parrafo{
+        margin: auto;
+        color: red;
+        position: relative;
+    }
+    
+.formulario input{
+    margin:auto auto 8px auto;
+    width:50%;
+ height:30px;
+}
+.formulario textarea{
+    margin:auto auto 8px auto;      
+    width:50%;
+    height:80px;
+ 
+}
+        .parrafo{
+           display:none;
+        }
+    .footer{
+        margin: auto;
+  flex-direction: column;
+    }
+    .lista-footer{
+      margin: 20px auto auto auto;
+    }
+   
+  } 
+    
